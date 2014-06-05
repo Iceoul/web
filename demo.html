@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="test" name="webdemo">
+<title></title>
+<!--CSS样式-->
+<link rel="stylesheet" href="css/css.css">
+</head>
+<style>
+span .node,.root{
+	-webkit-transform-origin: 50% 0%; -webkit-transform-style: preserve-3d;
+}
+dd{
+	position: relative; -webkit-transform-style: preserve-3d; -webkit-transform: translateZ(-0.1px);
+}
+dd span .face, .over{
+	-webkit-transform: translateZ(0.1px); background-color: rgba(0, 0, 0, 0.117647); opacity: 0;
+	background-position: initial initial; background-repeat: initial initial;
+}
+dd span .face, .back{
+	background-image: none; background-attachment: scroll; background-origin: padding-box; background-clip: border-box; background-color: 333; 	background-size: auto; -webkit-transform: translateZ(-0.1px); background-position: 0% 0%; background-repeat: repeat repeat;
+}
+span .node{
+	-webkit-transform-origin: 50% 0%; -webkit-transform-style: preserve-3d; 
+	-webkit-transform: rotateX(180deg);
+}
+.click_btn{
+	height: 20px;
+	padding-right: 10px;
+	font-size: 10px;
+	display: block;
+}
+</style>
+<body>
+<div class="content">
+	<section>
+    	<dl class="list nigiri open" style="-webkit-transform: perspective(1200px);">
+			<dt>Welcome to Mysite<span class="click_btn" style="float:right">↓</span></dt>
+			<span class="node root" style=" -webkit-animation: swing-out 3.5699999999999994s ease-in-out 0s 1 normal forwards;">
+	      	<span class="node" style="-webkit-transform-origin: 50% 0%; -webkit-transform-style: preserve-3d; -webkit-animation: unfold-first 1.7s ease-in-out 0s 1 normal forwards;">
+		    	<dd> 
+			      	<a href="#">MENU1</a> 
+				  	<span class="face over" style=" -webkit-animation: unfold-over 0.765s ease-in-out 0.255s 1 normal forwards; "></span>
+				  	<span class="face back"></span>
+				  	</dd>
+				  	<span class="node" style="-webkit-animation: unfold 1.7s ease-in-out 0.255s 1 normal forwards;">
+				  	<dd>
+				  		<a href="#">MENU2</a>
+				  		<span class="face over" style=" -webkit-animation: unfold-over 0.765s ease-in-out 0.51s 1 normal forwards; "></span> <span class="face back" style=""></span>
+				  	</dd>
+				  	<span class="node" style=" -webkit-animation: unfold 1.7s ease-in-out 0.51s 1 normal forwards;">
+				    	<dd>
+					      	<a href="#">MENU3</a>
+					      	<span class="face over" style="-webkit-animation: unfold-over 0.765s ease-in-out 0.765s 1 normal forwards; "></span>
+					      	<span class="face back" style=""></span>
+						</dd>
+						<span class="node" style="-webkit-animation: unfold 1.7s ease-in-out 0.765s 1 normal forwards;">
+				      		<dd>
+					      		<a href="#">MENU4</a>
+					      		<span class="face over" style=" -webkit-animation: unfold-over 0.765s ease-in-out 1.02s 1 normal forwards; "></span>
+					      		<span class="face back" style=""></span>
+						  	</dd>
+						  	<span class="node" style="-webkit-animation: unfold 1.7s ease-in-out 1.02s 1 normal forwards;">
+						  		<dd>
+						  			<a href="#">MENU5</a>
+						  			<span class="face over" style=" -webkit-animation: unfold-over 0.765s ease-in-out 1.275s 1 normal forwards; "></span>
+						  			<span class="face back" style=""></span>
+						  		</dd>
+						  		<span class="node" style="-webkit-animation: unfold 1.7s ease-in-out 1.275s 1 normal forwards;">
+							  		<dd>
+							  			<a href="#">MENU6</a>
+							  			<span class="face over" style=" -webkit-animation: unfold-over 0.765s ease-in-out 1.53s 1 normal forwards; "></span>
+							  			<span class="face back" style=""></span>
+							  		</dd>
+							  		<span class="node" style="-webkit-animation: unfold 1.7s ease-in-out 1.53s 1 normal forwards;">
+							  			<dd>
+							  				<a href="#">MENU7</a>
+							  				<span class="face over" style=" -webkit-animation: unfold-over 0.765s ease-in-out 1.7850000000000001s 1 normal forwards; "></span>
+							  				<span class="face back" style=""></span>
+							  			</dd>
+							  			<span class="node" style="-webkit-animation: unfold 1.7s ease-in-out 1.7850000000000001s 1 normal forwards;">
+							  				<dd>
+							  					<a href="#">MENU8</a>
+							  					<span class="face over" style=" -webkit-animation: unfold-over 0.765s ease-in-out 2.04s 1 normal forwards;"></span>
+							  					<span class="face back" style=""></span>
+							  				</dd>
+							  				<span class="node" style="-webkit-animation: unfold 1.7s ease-in-out 2.04s 1 normal forwards;">
+							  					<dd>
+							  						<a href="#">MENU9</a>
+							  						<span class="face over" style="-webkit-animation: unfold-over 0.765s ease-in-out 2.295s 1 normal forwards;"></span>
+							  						<span class="face back" style=""></span>
+							  					</dd>
+							  					<span class="node" style="-webkit-animation: unfold 1.7s ease-in-out 2.295s 1 normal forwards;">
+							  						<dd>
+							  							<a href="#">MENU10</a>
+							  							<span class="face over" style="-webkit-animation: unfold-over 0.765s ease-in-out 2.295s 1 normal forwards;"></span>
+							  							<span class="face back" style=""></span>
+							  						</dd>
+							  					</span>
+							  				</span>
+							  			</span>
+							  		</span>
+							  	</span>
+							</span>
+						</span>
+					</span>
+				</span>
+			</span>
+		</span>
+	</dl>
+</section>
+</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/makisu.min.js"></script>
+
+<script>
+if ($.fn.makisu.enabled) {
+	var $nigiri = $('.nigiri');
+	$nigiri.makisu({
+		selector: 'dd',
+		overlap: 0.85,
+		speed: 1.7
+	});
+	$('.list').makisu('open');
+	$('.click_btn').on('click', function () {
+		$('.list').makisu('toggle');
+	});
+   entDefault();
+} else {
+	$('.warning').show();
+}
+</script>
+</body>
+</html>
